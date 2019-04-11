@@ -31,6 +31,7 @@ listen(listenfd,1);//listen to clients
 clilen=sizeof(cliaddr);
 connfd=accept(listenfd,(struct sockaddr*)&cliaddr,(socklen_t*)&clilen);//connect to client
 
+
 cout<<"client connected";
 read(connfd,f,80);//read file name
 fp=fopen(f,"r");
