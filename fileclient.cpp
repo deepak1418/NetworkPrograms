@@ -17,6 +17,7 @@ char filename[80],recline[80];
 struct sockaddr_in servaddr;
 int sockfd;
 
+
 sockfd=socket(AF_INET,SOCK_STREAM,0);
 bzero(&servaddr,sizeof(servaddr));
 
